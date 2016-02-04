@@ -1,5 +1,5 @@
 
-public abstract class Clock implements TimePiece {
+abstract class Clock implements TimePiece {
 
 	private ClockType clockType;
 	protected Time time;
@@ -20,7 +20,7 @@ public abstract class Clock implements TimePiece {
 	}
 
 	@Override
-	public abstract void display();
+	public abstract String display();
 
 	public ClockType getClockType() {
 		return clockType;
@@ -29,7 +29,7 @@ public abstract class Clock implements TimePiece {
 	public void setClockType(ClockType clockType) {
 		this.clockType = clockType;
 	}
-
+	
 	public enum ClockType {
 		natural,
 
