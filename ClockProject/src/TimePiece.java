@@ -5,5 +5,5 @@ public interface TimePiece {
 	
 	public void tick();
 	
-	public String display();
+	public void display();
 }
