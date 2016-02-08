@@ -20,7 +20,7 @@ abstract class Clock implements TimePiece {
 	}
 
 	@Override
-	public abstract String display();
+	public abstract void display();
 
 	public ClockType getClockType() {
 		return clockType;
