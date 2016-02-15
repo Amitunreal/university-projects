@@ -1,14 +1,16 @@
 
 public class WristWatch extends Clock {
-
-	public WristWatch(ClockType cType, double driftPerSecond) {
-		super(cType, driftPerSecond);
+	public WristWatch(ClockType cType, double drift) {
+		super(cType, drift);
 	}
 
 	@Override
 	public void display() {
-		System.out.println("digital wrist watch time [" + this.time.actualHour() + ":" + this.time.actualMinute() + ":"
-				+ this.time.actualSecond() + "], total drift = " + this.time.getTotalDrift());
+		System.out
+				.println(String
+						.format("%45s%.2f", this.getClockType() + " wrist watch time ["
+								+ this.time.formattedReportedTime() + "], total drift = ", this.time.getTotalDrift())
+				+ " seconds");
 	}
 
 }

@@ -7,9 +7,10 @@ public class GrandfatherClock extends Clock {
 
 	@Override
 	public void display() {
-		System.out
-				.println("mechanical grandfather clock time [" + this.time.actualHour() + ":" + this.time.actualMinute()
-						+ ":" + this.time.actualSecond() + "], total drift = " + this.time.getTotalDrift());
+		System.out.println(String
+				.format("%45s%.2f", this.getClockType() + " grandfather clock time ["
+						+ this.time.formattedReportedTime() + "], total drift = ", this.time.getTotalDrift())
+				+ " seconds");
 	}
 
 }
