@@ -1,0 +1,113 @@
+****************
+* Project 2/Clocks
+* CS 221
+* 16-02-2016
+* Jace Brady
+**************** 
+
+OVERVIEW:
+
+ Project simulates the running of a collection of clocks over various 
+ periods of time. Because each clock has a different amount of 
+ drift(the amount time that the clock loses as it runs). Most of the 
+ clocks will display a different time at the end of a given time period.
+
+
+INCLUDED FILES:
+
+ List the files required for the project with a brief
+ explanation of why each is included.
+
+ e.g.
+ AtomicClock.java               - source file
+ The quantum type of clock having a particular amount of drift
+ 
+ Bag.java						- source file
+ Container to hold Clock objects and it can be any type of clock
+ 
+ Clock.java						- source file
+ An abstract class which must be inherited by all the type of clocks.
+ this class has methods which runs the clock and can reset the clock to any value.
+ 
+ ClockSimulation.java			- source file
+ A test class which simulates all the type of clocks working and provides an 
+ appropriate output as specified in the problem statement.
+ 
+ CuckooClock.java				- source file
+ The mechanical type of clock having a particular amount of drift
+ 
+ ElementNotFoundException.java	- source file
+ A User defined exception, thrown when a particular element will not be found in the bag.
+ 
+ EmptyCollectionException.java	- source file
+ A User defined exception, thrown when program will perform some operation on an empty bag.
+ 
+ GrandfatherClock.java			- source file
+ The mechanical type of clock having a particular amount of drift
+ 
+ Sundial.java					- source file
+ The natural type of clock having a particular amount of drift
+ 
+ Time.java						- source file
+ This class is responsible for providing all the operations that can be performed with time.
+ 
+ TimePiece.java					- source file
+ This interface provides mandatory operation that a clock must provide
+ 
+ WristWatch.java				- source file
+ The digital type of clock having a particular amount of drift
+ 
+ README							- this file
+
+
+COMPILING AND RUNNING:
+ 
+ These are command-line instructions for a system like onyx.
+ 
+ 1. Open Command Prompt
+ 2. Go to the folder which contains all the source files
+ 3. Compile the driver class (and all dependencies) with the command:
+ 
+  $ javac ClockSimulation.java
+
+ 4. Run the compiled class file with the command:
+  $ java ClockSimulation
+
+ Console output will give the results after the program finishes.
+
+
+PROGRAM DESIGN AND IMPORTANT CONCEPTS:
+
+ The project Contains an interface i.e. TimePiece which provides some mandatory operations for a clock
+ so the Clock class must implement this interface. There are five types of clock as listed in the project
+ and every type of clock has extended Clock class.
+
+ All the types of clock has there own implementation of display() method inherited from Clock class.
+ Each type of object has different amount of time drift.
+ 
+ This program is designed and implemented in the way it was mentioned in the project statement
+ The clock simulation class provide detailed comments which would make this project very easy to understand.
+
+TESTING:
+
+ The project can be run and tested using the instructions provided in COMPILING AND RUNNING section.
+
+
+DISCUSSION:
+ 
+ The issue I encountered while testing this project was its output format. It was very 
+ difficult to understand the output format, then I have studied how to format a string using String.format()
+ method and the issue got resolved.
+ 
+ The most challenging part of this project was the way output was printed
+ finally I came across some formatting tips and it made the project complete.
+ 
+ 
+EXTRA CREDIT:
+
+ The depth and detailing in the comments for each class and method make 
+ this project very easy to understand and test. Even a person who does 
+ not know java can understand its working by just following the comments.
+
+
+----------------------------------------------------------------------------

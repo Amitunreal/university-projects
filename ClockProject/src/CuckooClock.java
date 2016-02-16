@@ -1,4 +1,11 @@
-
+/**
+ * 
+ * @author Jace Brady
+ * 
+ * This is a type of clock which is mechanical in nature.
+ * The amount of drift in this type of clock is 0.000694444
+ *
+ */
 public class CuckooClock extends Clock {
 
 	public CuckooClock(ClockType cType, double driftPerSecond) {

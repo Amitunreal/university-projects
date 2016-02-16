@@ -1,4 +1,11 @@
-
+/**
+ * 
+ * @author Jace Brady
+ * 
+ * This is a type of clock which is natural in nature.
+ * The amount of drift in this type of clock is 0.00
+ *
+ */
 public class Sundial extends Clock {
 
 	public Sundial(ClockType cType, double driftPerSecond) {
